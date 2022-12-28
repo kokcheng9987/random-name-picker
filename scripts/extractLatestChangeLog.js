@@ -6,7 +6,7 @@ const CHANGELOG_PATH = path.join(BASE_DIR, 'CHANGELOG.md');
 const RELEASE_BODY_PATH = path.join(BASE_DIR, 'RELEASE_BODY.md');
 
 (async () => {
-  try {
+  try {2522
     const file = await fs.readFile(CHANGELOG_PATH, 'utf8');
     let updated = /(#+ \[\d+\.\d+\.\d+].*?)#+ \[?\d+\.\d+\.\d+]?/s.exec(file);
     if (!updated) {
